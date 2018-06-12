@@ -22,7 +22,9 @@ describe('Books', () => {
                 .get('/book')
                 // .set('Authorization', 'helloworld') // set headers property
                 .query({offset: 0, limit: 9}) // req.query
-                .auth('Authorization', 'helloworld') // set headers property Authenticate with Basic authentication
+                // set headers property Authenticate with Basic authentication ,
+                // req.headers.authorization = 'Basic QXV0aG9yaXphdGlvbjpoZWxsb3dvcmxk'
+                .auth('Authorization', 'helloworld')
                 .end((err, resp) => {
                     expect(resp.status).to.equal(200);
                     expect(resp.body).to.be.an('array');
