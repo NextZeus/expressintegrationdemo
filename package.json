@@ -1,0 +1,34 @@
+{
+  "name": "expressintegrationdemo",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "body-parser": "~1.18.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "ejs": "~2.5.7",
+    "express": "~4.15.5",
+    "morgan": "~1.9.0",
+    "serve-favicon": "~2.4.5",
+    "config": "^1.20.1",
+    "bluebird": "^3.5.1",
+    "mongoose": "^4.4.15"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-http": "^2.0.1",
+    "mocha": "^2.4.5",
+    "supertest": "^3.1.0"
+  },
+  "scripts": {
+    "test": "mocha --timeout 10000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NextZeus/expressintegrationdemo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NextZeus/expressintegrationdemo/issues"
+  },
+  "homepage": "https://github.com/NextZeus/expressintegrationdemo#readme"
+}
