@@ -169,7 +169,8 @@ describe('Books', () => {
 });
 
 ```
-
+### Result 
+![Result](./result.jpeg)
 
 ### 参考资料
 
