@@ -1,5 +1,23 @@
 # Integration test express restful api with mocha and chai-http or supertest
 
+## Unit Tests And Integration Tests
+
+1. 单元测试
+程序员通常编写这些测试。但测试人员也应该学习如何编写单元测试。您可以在生产代码（测试后）之后或生产代码之前（测试优先）编写它们。在生产代码之后编写它们时，需要注意生产代码是可测试的，因此考虑到可测试性的设计和代码审查阶段至关重要。
+
+单元测试的重点是方法或课程。它应该非常小，几行代码最多。在编写单元测试时，有很多方法可以犯错误，所以这不是一件微不足道的事情。因为它们很小，它们应该在内存中运行，并且单元测试应该在毫秒内运行。任何涉及外部依赖性（数据库，Web服务，文件系统，任何I / O）的测试都不是单元测试，它是其他内容（集成测试，集成测试，验收测试，端到端测试等）。
+
+单元测试结果首先对技术团队（程序员，测试人员，操作人员，开发人员等）感兴趣。
+
+2. 集成测试
+集成测试有很多定义。对我来说，集成测试是一个检查两个模块之间集成的测试。如果你有两个以上的模块，那么我们有一个综合测试，验收测试或端到端测试。
+
+这些测试通常由程序员编写。但测试人员通常也会写它们。
+如果您拥有组件团队，那么最好从每个模块的API开始，然后编写集成测试。这种方法相当于单元测试中的测试优先方法。编写代码之后，您也可以编写它们，但是在编写模块的API和每个模块的生产代码时，您还需要考虑可测试性。
+像Dependency Inversion，Interface Segregation，Single Responsibility这样的良好实践对于进行高效的集成测试非常重要。
+大多数情况下，我使用集成测试来检查外部模块（Web服务，数据库等）如何与系统集成。它们也用于检查与外部系统的连接，我是否拥有良好的功能。
+
+集成测试对于技术团队也很有意思，就像单元测试一样。
 
 # Code
 
@@ -180,3 +198,4 @@ describe('Books', () => {
 - [supertest](https://github.com/visionmedia/supertest)
 - [chaijs](http://www.chaijs.com/)
 - [bookstore](https://github.com/samuxyz/bookstore)
+- [automated-tests-purposes](http://blog.adrianbolboaca.ro/2017/01/automated-tests-purposes/)
